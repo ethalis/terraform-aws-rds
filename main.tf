@@ -73,6 +73,8 @@ module "db_instance" {
   port                                = var.port
   iam_database_authentication_enabled = var.iam_database_authentication_enabled
 
+  permissions_boundary = var.permissions_boundary
+
   replicate_source_db = var.replicate_source_db
 
   snapshot_identifier = var.snapshot_identifier

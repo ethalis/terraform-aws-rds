@@ -356,3 +356,9 @@ variable "ca_cert_identifier" {
   type        = string
   default     = "rds-ca-2019"
 }
+
+variable "permissions_boundary" {
+  description = "Specifies the Permissions Boundary for the IAM Role Enhanced Monitoring"
+  type        = string
+  default     = ""
+}
